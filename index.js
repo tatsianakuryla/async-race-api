@@ -110,7 +110,8 @@ server.patch('/engine', (req, res) => {
     }
 });
 
-server.use(router);
+// server.use(router);
+server.use('/api', router);
 server.listen(PORT, () => {
     console.log('Server is running on port', PORT);
 });
